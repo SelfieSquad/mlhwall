@@ -5,7 +5,7 @@ module.exports = {
     request.post({
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
-        'Authorization': 'Bearer ZkLAouo1lTUR9pGtLvQR4tWMpaLGea'
+        'Authorization': 'Bearer NHnJ7glUNa0LgwGf0ghvcEKtRNRPVq'
       },
       url: 'https://api.clarifai.com/v1/tag/',
       body: 'url=' + url
