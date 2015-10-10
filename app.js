@@ -24,7 +24,7 @@ app.get('/test', function(req, res) {
 
           html = html + '<img src="' + JSON.parse(cData).results[0].url + '">'
 
-          if(run >= tData.statuses.length) {
+          if(run >= tData.statuses.length - 1) {
             console.log(html);
             res.send(html);
           }
