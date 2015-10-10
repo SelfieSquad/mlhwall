@@ -1,0 +1,9 @@
+{
+  "name": "mlhwall",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "request": "^2.64.0",
+    "twit": "^2.1.0"
+  }
+}

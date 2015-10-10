@@ -1,6 +1,6 @@
 var request = require('request');
 
-var object = {
+module.exports = {
   getTags: function(url, cb) {
     request.post({
       headers: {
@@ -9,10 +9,8 @@ var object = {
       },
       url: 'https://api.clarifai.com/v1/tag/',
       body: 'url=' + url
-    }, function(error, response, body){
-      cb(body);
+    }, function(err, res, data){
+      cb(data);
     });
   }
 };
-
-module.exports = object;
