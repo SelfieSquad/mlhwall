@@ -9,7 +9,8 @@ var T = new Twit({
 
 module.exports = {
   getTweets: function(hashtag, cb) {
-    T.get('search/tweets', { q: hashtag + ' filter:images', count: 100 }, function(err, data, res) {
+    T.get('search/tweets', { q: hashtag + ' filter:images', count: 50 }, function(err, data, res) {
+      console.log(data.statuses[0].entities);
       cb(data);
     });
   }

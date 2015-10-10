@@ -5,11 +5,12 @@ module.exports = {
     request.post({
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
-        'Authorization': 'Bearer K1Ce2dnTNbsxDW70uRdmbUGgwv29RS'
+        'Authorization': 'Bearer ZkLAouo1lTUR9pGtLvQR4tWMpaLGea'
       },
       url: 'https://api.clarifai.com/v1/tag/',
       body: 'url=' + url
     }, function(err, res, data){
+      console.log(err);
       cb(data);
     });
   }
